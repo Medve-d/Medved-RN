@@ -21,12 +21,12 @@ export default function App() {
       <Text style={styles.title}>To-Do List</Text>
       <View style={styles.inputContainer}>
         <TextInput
-          placeholder="Enter task"
+          placeholder="Entrer une tâche"
           style={styles.input}
           value={task}
           onChangeText={text => setTask(text)}
         />
-        <Button title="Add" onPress={addTask} />
+        <Button title="Ajouter" onPress={addTask} />
       </View>
       <FlatList
         data={tasks}
